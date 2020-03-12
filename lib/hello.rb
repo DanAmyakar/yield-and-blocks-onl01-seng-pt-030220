@@ -10,7 +10,7 @@ def hello_t(arr_1)
     arr_1
   
   else
-    puts "Hey! No block wa given!"
+    puts "Hey! No block was given!"
   end
   
 end
