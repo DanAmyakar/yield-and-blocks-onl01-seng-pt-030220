@@ -1,12 +1,17 @@
 def hello_t(arr_1)
-  i = 0
+  if block_given?
+    i = 0
   
-  while i < arr_1.length
-    yield arr_1[i]
-    i += 1  
-  end
+    while i < arr_1.length
+      yield arr_1[i]
+      i += 1  
+    end
 
-  arr_1
+    arr_1
+  
+  else
+    puts "Hey! No block wa given!"
+  end
   
 end
 
